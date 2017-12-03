@@ -36,7 +36,9 @@ public class DBTaskOfProduct implements Callable<Product>{
 			System.out.println("doing some crucial work.. contd "+Thread.currentThread().getName());
 		}
 		System.out.println("end  crucial work"+name);
-		return null;
+		Product p = new Product();
+		p.setPID((int)(Math.random()*100)+"");
+		return p;
 	}
 
 }

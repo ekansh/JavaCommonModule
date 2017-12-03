@@ -33,7 +33,9 @@ public class ThreadManager {
 			product1 = pool.take().get();
 			product2 = pool.take().get();
 			product3 = pool.take().get();
-
+			System.out.println("product 1 "+product1);
+			System.out.println("product 2 "+product2);
+			System.out.println("product 3 "+product3);
 		} catch (InterruptedException | ExecutionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

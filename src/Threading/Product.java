@@ -23,7 +23,10 @@ public class Product implements Comparable<Product>{
 	public void setPID(String pID) {
 		PID = pID;
 	}
-
+	@Override
+	public String toString(){
+		return "PID "+PID;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;

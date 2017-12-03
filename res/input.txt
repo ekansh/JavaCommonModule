@@ -1,0 +1,4 @@
+here
+some data containg foreign characters
+
+that we can use to validate our ReadFile Code
