@@ -12,8 +12,11 @@ public class Task implements Runnable {
 
 	@Override
 	public void run() {
+		synchronized (name) {
+			
+			System.out.println(name);
+		}
 
-		System.out.println(name);
 
 	}
 
