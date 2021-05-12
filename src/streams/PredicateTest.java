@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BinaryOperator;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -57,9 +58,8 @@ public static void main(String[] args) {
 	System.out.println("using generate function SUPPLIER reference limit reduce");
 	Integer reduce = Stream.generate(PredicateTest::getRandom).limit(5).reduce(-10, Integer::max);
 	System.out.println("MAX value "+reduce);
-	
-}
-public static int getRandom(){
+	}
+public  static int getRandom(){
 	return (int)(Math.random()*100);
 }
 }
